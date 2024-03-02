@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    margin: 30px;
+}
+
+h1{
+    margin: 10px;
+}
+
+li{
+    background-color: #1c1a1d;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 32px;
+    margin-left: 32px;
+    padding: 32px;
+    height: 250px;
+    width: 400px;
+}
+
+.selected {
+    background-color: #363338;
+    border: 2px solid #0088d8;
+}
+
+/* .hidden {
+    display: none;
+} */

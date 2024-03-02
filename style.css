@@ -1,0 +1,245 @@
+p{
+    color: black;
+    font-size: larger;
+}
+
+/* É recomendado usar cores em CÓDIGOS, pois na forma escrita não é padronizada, dependendo do navegador
+Por exemplo:
+Código RGB: h1{color: rgb(255, 0, 0);}
+Códigos Hexadecimais: formato #RRGGBB. > h1{color: #FF0000;}
+Códigos HSL: Hue, Saturation, Lightness > h1{color: hsl(0°, 100%, 50%);}
+ */
+
+ body{
+    /* background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg");
+    background-size: cover; */
+    background-color: #ffffff;
+ }
+
+ .headerinicio{
+    background-color: #444444;
+    color: #ffffff;
+ }
+
+ /*main*/.maininicio{
+    background-color: #bbb6b6;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #553f5f;
+ }
+
+ .box1{
+    background-color: #169647;
+    height: 60px;
+    width: 360px;
+    border:solid 2px  #444444; /* podemos resumir o elemento "border", ao invés de aplicar um por um como feito no Main*/
+ }
+
+ .box2{
+    background-image: linear-gradient(to left, #2c2c2d, #f6434b); /*cor de fundo em gradiente*/
+    height: 60px;
+    width: 360px;
+ }
+
+ .box3{
+    background-color: #0077ff;
+    height: 60px;
+    width: 360px;
+    border: 2px solid #1c1a1d;
+    border-radius: 15px ; /*arredondar a borda*/
+ }
+
+ .box4, .box5{
+   background-color: #f64348;
+   border: 2px solid #1c1a1d;
+ }
+
+ .box4, .box5{
+   /* margem */
+  margin-top: 30px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+
+	/* preenchimento */
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  
+ }
+
+ /* inline: não quebra de linha, largura mínima, apenas aceita margem e preenchimento horizontal */
+.inline {
+   display: inline;
+   margin-top: 100px;
+   margin-bottom: 100px;
+   margin-left: 20px;
+   margin-right: 20px;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+/* block: quebra de linha, largura máxima, aceita margem e preenchimento vertical */
+.block {
+   display: block;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 20px;
+   margin-right: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+/* inline-block: não quebra linha, */
+.inline-block {
+   display: inline-block;
+   margin-top: 10px;
+   padding-top: 10px;
+}
+
+/*>>>>> SELETORES <<<<<*/
+
+/* seletor universal */
+* {
+   margin: 0;
+   padding: 0;
+}
+
+/* seletor de tag */
+header, footer {
+   background-color: #333;
+   color: #fff;
+   padding: 10px;
+}
+
+/* seletor de elementos aninhados */
+nav a {
+   color: #27ae60;
+}
+
+/* seletor de filhos */
+nav > a {
+   display: block;
+   color: #f5a623;
+   padding: 10px;
+}
+
+/* seletor de classes */
+.laranja {
+   color: #f5a623;
+}
+.verde {
+   color: #27ae60;
+}
+
+/* seletor de id */
+#secao-principal {
+   padding: 20px;
+   text-align: center;
+}
+
+/* combinação de seletores */
+#secao-principal > * {
+   margin-top: 10px;
+}
+
+input {
+   display: block;
+   padding: 5px;
+   margin: 5px;
+}
+
+/* seletor de sequência */
+input + input {
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+h2 + p {
+   padding: 30px;
+}
+
+/* seletores de propriedade */
+input[name="email"] {
+   background-color: #f5a623;
+}
+
+input[type="password"] {
+   background-color: #27ae60;
+}
+
+.texto{
+   color: #1c1a1d;
+   background-color: #fff;
+   text-align: center;
+   text-decoration: line-through;
+}
+
+.bold {
+   font-weight: 700;
+ }
+ 
+ .italic {
+   font-style: italic;
+ }
+
+
+ .medidas {
+   background-color: #232323;
+   color: #fff;
+   padding: 10px;
+}
+
+.sectionmedida {
+   background-color: #ddd;
+   height: 100px;
+}
+
+.medidabox {
+   border: 1px solid #232323;
+   display: inline-block;
+   font-size: 16px;
+   margin-top: 20px;
+   width: 75px;
+   background-color: #0077ff;
+}
+
+.px {
+   height: 10px;
+}
+
+/* root element -> 16px * 3 = 48px */
+.rem {
+   height: 3rem;
+}
+
+.em {
+   font-size: 20px;
+   padding: 1em;
+}
+
+.prcnt-33 {
+   height: 33%;
+}
+
+.prcnt-66 {
+   height: 66%;
+}
+
+.prcnt-100 {
+   height: 100%;
+}
+
+/* viewport height */
+.vh {
+   height: 30vh;
+}
+
+/* viewport width */
+.vw {
+   width: 50vw;
+}
